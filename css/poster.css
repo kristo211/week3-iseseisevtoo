@@ -44,6 +44,7 @@ html {
     position: relative;
     left: -70rem;
     animation: slide-from-left 3.5s ease-in-out forwards;
+    cursor: pointer;
 }
 @keyframes slide-from-left {
     80% {left: 1.5rem;}
@@ -134,3 +135,45 @@ footer ul li a {
     text-decoration: none;
     color: #777;
 }
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(59, 52, 52, 0.583);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    
+
+
+}
+.modal-content {
+    background-color: blanchedalmond;
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+    border-radius: 10px;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1) ;}
+    
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+.movie-poster-modal {
+    width: 300px;
+}
+
+
+
