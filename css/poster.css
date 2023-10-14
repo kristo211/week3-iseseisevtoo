@@ -145,10 +145,7 @@ footer ul li a {
     top: 0;
     left: 0;
     text-align: center;
-    
-
-
-}
+    }
 .modal-content {
     background-color: blanchedalmond;
     margin: 5% auto;
@@ -174,6 +171,61 @@ footer ul li a {
 .movie-poster-modal {
     width: 300px;
 }
+.container {
+    width: 75%;
+    text-align: center;
+    margin: 3rem auto;
 
+}
+
+.carousel {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+    display: none;
+
+}
+
+.carousel .carousel__item--visible {
+    display: block;
+    animation: fadeIn .6s;
+
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+.carousel .carousel__actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.carousel .carousel__actions button {
+    border-radius: 50px;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: rgba(255, 228, 196, 0.42);
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem ;
+
+}
 
 
